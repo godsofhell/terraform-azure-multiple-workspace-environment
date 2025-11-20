@@ -30,7 +30,7 @@ for subnet_key,subnets in var.environment[terraform.workspace].subnets :
     }]
        ]))
 
-
+//this will create a flat list of maps for virtual machine details
 virtual_machine_details=(flatten([
     for subnet_key,subnets in var.environment[terraform.workspace].subnets :[
         for network_interfaces in subnets.network_interfaces :
