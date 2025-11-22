@@ -55,7 +55,9 @@ resource "azurerm_network_security_group" "network_security_group" {
     destination_address_prefix = "*"
   }
   }
-
+  tags = {
+    environment = terraform.workspace
+  }
   
 }
 
