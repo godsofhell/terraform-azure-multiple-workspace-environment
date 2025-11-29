@@ -118,15 +118,4 @@ This repository currently contains local state files (`terraform.tfstate`). For 
 - Add `terraform.tfstate` and any files containing secrets to `.gitignore` if they are not already excluded from VCS.
 - Use least privilege for service principal used for automation.
 
-## How I verified
 
-This `README.md` was added to the repository root to document the repository layout, usage, and security recommendations. No Terraform changes were executed as part of this edit.
-
----
-
-If you'd like, I can:
-
-- Replace the hard-coded provider credentials with a `providers.auto.tfvars` example that reads from env vars.
-- Add a sample `backend` configuration for `azurerm` and helper scripts to bootstrap remote state and service principal creation.
-
-Update me which follow-up you prefer.
